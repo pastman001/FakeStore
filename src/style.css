@@ -6,6 +6,7 @@
 }
 .mainFooter {
   background-color: rgb(40, 40, 141);
+
   left: 0px;
   bottom: 0px;
   height: 5vw;
@@ -42,8 +43,23 @@ body {
   padding: 8px 16px;
   font-size: 16px;
 }
+.mainC {
+  background-image: url('../src/assets/img/backgroun.png');
+  height: 40vw;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
 .mainContainer {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
+}
+.imgMain {
+  margin: 10vw;
+  height: 20vw;
+  width: 35vw;
+}
+.mainText {
+  color: white;
+  font-size: 30px;
 }

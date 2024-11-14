@@ -6,6 +6,7 @@ export const store = [
       'Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, impedit hic nam earum provident cum ratione.',
     price: '109.95',
     id: 0,
+    count: 0,
   },
   {
     img: '../src/assets/img/tshort.png',
@@ -14,6 +15,7 @@ export const store = [
       'Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, impedit hic nam earum provident cum ratione.',
     price: '22.30',
     id: 1,
+    count: 0,
   },
   {
     img: '../src/assets/img/Jacket.png',
@@ -22,6 +24,7 @@ export const store = [
       'Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, impedit hic nam earum provident cum ratione.',
     price: '55.99',
     id: 2,
+    count: 0,
   },
   {
     img: '../src/assets/img/slim.png',
@@ -30,6 +33,7 @@ export const store = [
       'Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, impedit hic nam earum provident cum ratione.',
     price: '15.99',
     id: 3,
+    count: 0,
   },
   {
     img: '../src/assets/img/wJacket.png',
@@ -38,6 +42,7 @@ export const store = [
       'Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, impedit hic nam earum provident cum ratione.',
     price: '56.99',
     id: 4,
+    count: 0,
   },
   {
     img: '../src/assets/img/wJacketB.png',
@@ -46,6 +51,7 @@ export const store = [
       'Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, impedit hic nam earum provident cum ratione.',
     price: '29.95',
     id: 5,
+    count: 0,
   },
   {
     img: '../src/assets/img/wJacketR.png',
@@ -54,6 +60,7 @@ export const store = [
       'Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, impedit hic nam earum provident cum ratione.',
     price: '39.99',
     id: 6,
+    count: 0,
   },
   {
     img: '../src/assets/img/MBJ.png',
@@ -62,6 +69,7 @@ export const store = [
       'Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, impedit hic nam earum provident cum ratione.',
     price: '9.85',
     id: 7,
+    count: 0,
   },
   {
     img: '../src/assets/img/Opna.png',
@@ -70,5 +78,6 @@ export const store = [
       'Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, impedit hic nam earum provident cum ratione.',
     price: '7.95',
     id: 8,
+    count: 0,
   },
 ];
