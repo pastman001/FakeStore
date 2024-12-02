@@ -1,10 +1,28 @@
 import React from 'react';
 import { store } from '../store/Store';
 
-export const Products = ({ purchases, setPurchases }) => {
-  const clickHandler = (item) => {
-    setPurchases(purchases.push(item));
-    console.log(purchases);
+type PurchasesType = {
+  img: string;
+  name: string;
+  description: string;
+  price: number;
+  id: number;
+  count: number;
+};
+type Props = {
+  purchases: PurchasesType[];
+  setPurchases: React.Dispatch<React.SetStateAction<PurchasesType[]>>;
+};
+
+export const Products: React.FC<Props> = ({ purchases, setPurchases }) => {
+  const clickHandler = (item: PurchasesType) => {
+    if (item.count === 0) {
+      setPurchases([...purchases, item]);
+      item.count++;
+      console.log(purchases);
+    } else {
+      item.count++;
+    }
   };
   return (
     <div className="mainContainer">
@@ -19,7 +37,6 @@ export const Products = ({ purchases, setPurchases }) => {
             <button
               className="buttonContainer"
               onClick={() => {
-                item.count++;
                 clickHandler(item);
               }}
             >

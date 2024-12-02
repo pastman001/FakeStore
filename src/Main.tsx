@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 export const Main = () => {
   return (
@@ -7,7 +8,9 @@ export const Main = () => {
         <div className="mainText">
           best online store of the year We don&apos;t do fashion, we are fashion{' '}
         </div>
-        <button>shop now</button>
+        <Link to="/products">
+          <button>shop now</button>
+        </Link>
       </div>
       <div>
         <img className="imgMain" src="../src/assets/img/people.png" />

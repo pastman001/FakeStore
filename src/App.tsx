@@ -8,16 +8,30 @@ import { Navigation } from './Navigation';
 import { Products } from './Products';
 import './style.css';
 
+type Test = {
+  img: string;
+  name: string;
+  description: string;
+  price: string;
+  id: number;
+  count: number;
+};
 export const App = () => {
-  const [purchases, setPurchases] = useState([]);
+  const [purchases, setPurchases] = useState<Test[]>([]);
   return (
     <>
       <Navigation />
       <Routes>
         <Route path="/" element={<Main />}></Route>
         <Route path="/contacts" element={<Contacts />}></Route>
-        <Route path="/products" element={<Products purchases={purchases} setPurchases={setPurchases} />}></Route>
-        <Route path="/bag" element={<Bag purchases={purchases} setPurchases={setPurchases} />}></Route>
+        <Route
+          path="/products"
+          element={<Products purchases={purchases} setPurchases={setPurchases} />}
+        ></Route>
+        <Route
+          path="/bag"
+          element={<Bag purchases={purchases} setPurchases={setPurchases} />}
+        ></Route>
       </Routes>
       <Copyright />
     </>
