@@ -68,3 +68,14 @@ body {
   color: white;
   font-size: 30px;
 }
+.purchsesClass {
+  background-image: url('../src/assets/img/image.png');
+  background-size: cover;
+  height: 2vw;
+  width: 2vw;
+}
+purchesesCount {
+  color: #000 !important;
+  text-decoration: none;
+  background-color: red;
+}

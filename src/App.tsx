@@ -12,7 +12,7 @@ type Test = {
   img: string;
   name: string;
   description: string;
-  price: string;
+  price: number;
   id: number;
   count: number;
 };
@@ -20,7 +20,7 @@ export const App = () => {
   const [purchases, setPurchases] = useState<Test[]>([]);
   return (
     <>
-      <Navigation />
+      <Navigation purchases={purchases} />
       <Routes>
         <Route path="/" element={<Main />}></Route>
         <Route path="/contacts" element={<Contacts />}></Route>

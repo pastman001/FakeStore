@@ -1,3 +1,4 @@
+/* cSpell:disable */
 export const store = [
   {
     img: '../src/assets/img/bag.png',
